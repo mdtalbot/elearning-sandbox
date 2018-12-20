@@ -1,5 +1,7 @@
 {
   "name": "howto",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "node": "^11.4.0"
+  }
 }
