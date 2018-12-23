@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import logo from './logo.svg';
+
 import './App.css';
+import Sidebar from '/components/Sidebar'
+
 
 class App extends Component {
   render() {
