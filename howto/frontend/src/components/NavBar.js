@@ -1,66 +1,40 @@
-import React from 'react';
+import React, { Component } from 'react'
+import { Menu } from 'semantic-ui-react'
 
-export default function NavBar(props) {
-  return (
-    class DesktopContainer extends Component {
-      state = {}
+export default class NavBar extends Component {
+  state = {}
 
-      hideFixedMenu = () => this.setState({ fixed: false })
-      showFixedMenu = () => this.setState({ fixed: true })
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
-      render() {
-        const { children } = this.props
-        const { fixed } = this.state
+  render() {
+    const { activeItem } = this.state
 
-        return (
-          <Responsive minWidth={Responsive.onlyTablet.minWidth}>
-            <Visibility
-              once={false}
-              onBottomPassed={this.showFixedMenu}
-              onBottomPassedReverse={this.hideFixedMenu}
-            >
-              <Segment
-                inverted
-                textAlign='center'
-                style={{ minHeight: 700, padding: '1em 0em' }}
-                vertical
-              >
-                <Menu
-                  fixed={fixed ? 'top' : null}
-                  inverted={!fixed}
-                  pointing={!fixed}
-                  secondary={!fixed}
-                  size='large'
-                >
-                  <Container>
-                    <Menu.Item as='a' active>
-                      Home
-                </Menu.Item>
-                    <Menu.Item as='a'>Courses</Menu.Item>
-                    <Menu.Item as='a'>Grades</Menu.Item>
-                    <Menu.Item as='a'>Help</Menu.Item>
-                    <Menu.Item position='right'>
-                      <Button as='a' inverted={!fixed}>
-                        Log in
-                  </Button>
-                      <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-                        Sign Up
-                  </Button>
-                    </Menu.Item>
-                  </Container>
-                </Menu>
-                <HomepageHeading />
-              </Segment>
-            </Visibility>
+    return (
+      <Menu>
+        <Menu.Item
+          name='editorials'
+          active={activeItem === 'editorials'}
+          onClick={this.handleItemClick}
+        >
+          Editorials
+        </Menu.Item>
 
-            {children}
-          </Responsive>
-        )
-      }
-    }
-  );
-}
+        <Menu.Item
+          name='reviews'
+          active={activeItem === 'reviews'}
+          onClick={this.handleItemClick}
+        >
+          Reviews
+        </Menu.Item>
 
-DesktopContainer.propTypes = {
-  children: PropTypes.node
+        <Menu.Item
+          name='upcomingEvents'
+          active={activeItem === 'upcomingEvents'}
+          onClick={this.handleItemClick}
+        >
+          Upcoming Events
+        </Menu.Item>
+      </Menu>
+    )
+  }
 }

@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import logo from './logo.svg';
-import './App.css';
 import LandingPage from '../src/containers/layout/LandingPage'
-
+import 'semantic-ui-css/semantic.min.css';
 
 class App extends Component {
   render() {

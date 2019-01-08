@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Header, Container } from 'semantic-ui-react'
+import NavBar from '../../components/NavBar'
 
 export default class LandingPage extends React.Component {
   constructor(props) {
@@ -13,17 +13,8 @@ export default class LandingPage extends React.Component {
 
   render() {
     return (
-      <div>
-      <div>
-        <Header>
-
-        </Header>
-      </div>
-    </div>
+      <NavBar />
 
     );
   }
 }
-
- LandingPage.propTypes = propTypes;
- LandingPage.defaultProps = defaultProps;
