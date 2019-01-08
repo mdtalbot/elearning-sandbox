@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Header, Image, Container} from 'semantic-ui-react'
+import {Header, Image, Container, Divider} from 'semantic-ui-react'
 
 const propTypes = {};
 
@@ -15,9 +15,8 @@ export default class NJvTLO extends React.Component {
   render() {
     return (
       <div>
+        <Image size='medium' src='https://www.uscourts.gov/sites/default/files/styles/callout/public/tlo_podcast_large.jpg?itok=yWRr1Brq' circular centered />
       <Header size='huge' textAlign='center'>
-        <Image size='huge' src='https://www.uscourts.gov/sites/default/files/styles/callout/public/tlo_podcast_large.jpg?itok=yWRr1Brq' circular />
-        <br />
           <Header.Content>New Jersey v. T.L.O.</Header.Content>
           <Header.Subheader>Should teachers be allowed to search student lockers?</Header.Subheader>
       </Header>
