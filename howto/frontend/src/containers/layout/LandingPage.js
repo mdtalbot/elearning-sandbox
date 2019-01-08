@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from '../../components/NavBar'
+import LessonContainer from './LessonContainer';
 
 export default class LandingPage extends React.Component {
   constructor(props) {
@@ -13,8 +14,10 @@ export default class LandingPage extends React.Component {
 
   render() {
     return (
+      <div>
       <NavBar />
-
+      <LessonContainer />
+      </div>
     );
   }
 }
