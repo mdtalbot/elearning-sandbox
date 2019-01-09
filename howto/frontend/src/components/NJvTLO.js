@@ -26,6 +26,61 @@ export default class NJvTLO extends React.Component {
         </div>
         <div className="lesson-sidebar">
           <Segment vertical floated='left'>  <List>
+            <Header textAlign='center'>Vital Information</Header>
+            <List.Item>
+              <Icon name='calendar alternate outline' />
+              <List.Content>
+                <List.Header>Decided On</List.Header>
+                <List.Description>
+                January 15. 1985
+              </List.Description>
+              </List.Content>
+            </List.Item>
+            <List.Item>
+              <Icon name='gavel' />
+              <List.Content>
+                <List.Header>Decision</List.Header>
+                <List.Description>
+                  6-3 in favor of the State of New Jersey
+              </List.Description>
+              </List.Content>
+            </List.Item>
+            <List.Item>
+              <Icon name='balance scale' />
+              <List.Content>
+                <List.Header>Decided By</List.Header>
+                <List.Description>
+                  Chief Justice <a href='https://en.wikipedia.org/wiki/Warren_E._Burger'>Warren Burger</a> (concurring)
+                  <br />
+                  Justice <a href='https://en.wikipedia.org/wiki/Byron_White'>Byron White</a> (majority opinion)
+                  <br />
+                  Justice <a href='https://en.wikipedia.org/wiki/Thurgood_Marshall'>Thurgood Marshall</a> (dissenting)
+                  <br />
+                  Justice <a href='https://en.wikipedia.org/wiki/Harry_Blackmun'>Harry Blackmun</a> (concurring)
+                  <br />
+                  Justice <a href='https://en.wikipedia.org/wiki/Lewis_F._Powell_Jr.'>Lewis F. Powell, Jr.</a> (concurring)
+                  <br />
+                  Justice <a href="https://en.wikipedia.org/wiki/William_Rehnquist">William Rehnquist</a> (concurring)
+                  <br />
+                  Justice <a href='https://en.wikipedia.org/wiki/John_Paul_Stevens'>John Paul Stevens</a> (dissenting)
+                  <br />
+                  Justice <a href='https://en.wikipedia.org/wiki/William_J._Brennan_Jr.'>William J. Brennan, Jr.</a> (dissenting)
+                  Justice <a href='https://en.wikipedia.org/wiki/Sandra_Day_O%27Connor'>Sandra Day O'Connor</a> (concurring)
+              </List.Description>
+              </List.Content>
+            </List.Item>
+            <List.Item>
+              <Icon name='bullhorn' />
+              <List.Content>
+                <List.Header>Argued By</List.Header>
+                <List.Description>
+                  Allan J. Nodes (for New Jersey)
+                  <br />
+                  Lois de Julio (for T.L.O.)
+              </List.Description>
+              </List.Content>
+            </List.Item>
+            <Header textAlign='center'>Useful Links</Header>
             <List.Item as='a' href='https://apps.oyez.org/player/#/burger8/oral_argument_audio/18116'
               target='popup'>
               <Icon name='headphones' />
@@ -38,7 +93,6 @@ export default class NJvTLO extends React.Component {
               </List.Content>
             </List.Item>
             <br />
-            <br />
             <List.Item as='a' href='https://apps.oyez.org/player/#/burger8/oral_argument_audio/23720'
             target='popup'>
               <Icon name='headphones' />
@@ -50,10 +104,42 @@ export default class NJvTLO extends React.Component {
               </List.Description>
               </List.Content>
             </List.Item>
-
+            <br />
+            <List.Item as='a' href='https://www.law.cornell.edu/supremecourt/text/469/325#writing-USSC_CR_0469_0325_ZO'
+              target='popup'>
+              <Icon name='comment alternate outline' />
+              <List.Content>
+                <List.Header>Text of the Majority Opinion</List.Header>
+                <List.Description>
+                Authored by Justice White and concurred with by Chief Justice Burger alongside Justices Blackmun, O'Connor, Powell, and Rehnquist. Text courtesy of Cornell Law School.
+              </List.Description>
+              </List.Content>
+            </List.Item>
+            <br />
+            <List.Item as='a' href='https://www.law.cornell.edu/supremecourt/text/469/325#writing-USSC_CR_0469_0325_ZX'
+              target='popup'>
+              <Icon name='comment alternate outline' />
+              <List.Content>
+                <List.Header>Text of Marshall's Opinion</List.Header>
+                <List.Description>
+                  Authored by Justice Thurgood Marshall in partial dissent with the majority decision. Courtesy of Cornell Law School.
+              </List.Description>
+              </List.Content>
+            </List.Item>
+            <br />
+            <List.Item as='a' href='https://www.law.cornell.edu/supremecourt/text/469/325#writing-USSC_CR_0469_0325_ZX1'
+              target='popup'>
+              <Icon name='comment alternate outline' />
+              <List.Content>
+                <List.Header>Text of Stevens' Opinion</List.Header>
+                <List.Description>
+                  Authored by Justice John Paul Stevens in partial dissent with the majority decision. Courtesy of Cornell Law School.
+              </List.Description>
+              </List.Content>
+            </List.Item>
           </List>
           </Segment>
-        </div>
+          </div>
         <div className="text-container">
           <Container text>
             In 1980, a teacher at Piscataway High School in New Jersey found two girls smoking in a restroom. At the school, smoking in the restrooms was a violation of school rules; smoking was allowed only in the designated smoking area. The teacher escorted the two girls to the principal's office, where they met with an assistant vice principal, Theodore Choplick. One of the girls was <div className='tooltip'>T.L.O.,<span className='tooltiptext'>T.L.O. was referred to in official documentation by her initials due to the fact that she was a minor at the time. Her full name was later revealed to be Tracy Lois Odem.</span></div> a freshman who was 14 years old. The girl who was with T.L.O. admitted that she had been smoking; T.L.O., however, denied the allegation, and said that she did not, in fact, smoke at all.
@@ -68,7 +154,7 @@ export default class NJvTLO extends React.Component {
             <br />
             <br />
 
-            T.L.O. tried to have the evidence from her purse suppressed, contending that the search violated the <div className="tooltip">Fourth Amendment<span class="tooltiptext">"The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized."</span></div>. She also claimed that her confession should be suppressed on the grounds that it was tainted by the unlawful search. The juvenile court rejected her Fourth Amendment arguments, although it conceded that the Fourth Amendment applies to searches by school officials. However, it held that a school official 'may search a student if that official has a reasonable suspicion that a crime has been or is in the process of being committed, or reasonable cause to believe that the search is necessary to maintain school discipline or enforce school policies.' This is a lower standard than the <div className="tooltip">'probable cause'<span class="tooltiptext">Probable cause is a requirement found in the Fourth Amendment that must usually be met before police make an arrest, conduct a search, or receive a warrant.  Courts usually find probable cause when there is a reasonable basis for believing that a crime may have been committed (for an arrest) or when evidence of the crime is present in the place to be searched (for a search).
+            T.L.O. tried to have the evidence from her purse suppressed, contending that the search violated the <div className="tooltip">Fourth Amendment<span className="tooltiptext">"The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized."</span></div>. She also claimed that her confession should be suppressed on the grounds that it was tainted by the unlawful search. The juvenile court rejected her Fourth Amendment arguments, although it conceded that the Fourth Amendment applies to searches by school officials. However, it held that a school official 'may search a student if that official has a reasonable suspicion that a crime has been or is in the process of being committed, or reasonable cause to believe that the search is necessary to maintain school discipline or enforce school policies.' This is a lower standard than the <div className="tooltip">'probable cause'<span className="tooltiptext">Probable cause is a requirement found in the Fourth Amendment that must usually be met before police make an arrest, conduct a search, or receive a warrant.  Courts usually find probable cause when there is a reasonable basis for believing that a crime may have been committed (for an arrest) or when evidence of the crime is present in the place to be searched (for a search).
            </span></div> standard, which is required when police conduct a search.
             <br />
             <br />
