@@ -1,6 +1,11 @@
 .lesson-header {
   padding: 1em;
-  margin: 4em
+  margin: 2em
+}
+
+.lesson-sidebar {
+  margin-left: 2em;
+  width: 20em
 }
 
 .tooltip {
@@ -11,12 +16,12 @@
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 360px;
+  width: 30em;
   background-color: rgb(6, 153, 6);
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 5px;
+  padding: 10px;
   position: absolute;
   z-index: 1;
   top: 150%;

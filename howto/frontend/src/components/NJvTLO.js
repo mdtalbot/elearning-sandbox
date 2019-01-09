@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Header, Image, Container, Divider} from 'semantic-ui-react'
+import {Header, Icon, Menu, Sidebar, Segment, Image, Container, Divider, List} from 'semantic-ui-react'
 
 const propTypes = {};
 
@@ -23,6 +23,32 @@ export default class NJvTLO extends React.Component {
           </Header>
 
         </div>
+        <div className="lesson-sidebar">
+          <Segment vertical floated='left'>  <List>
+            <List.Item as='a'>
+              <Icon name='headphones' />
+              <List.Content>
+                <List.Header>Floated Icon</List.Header>
+                <List.Description>
+                  This text will always have a left margin to make sure it sits alongside your icon
+              </List.Description>
+              </List.Content>
+            </List.Item>
+            <br />
+            <br />
+            <List.Item as='a'>
+              <Icon name='headphones' />
+              <List.Content>
+                <List.Header>Floated Icon</List.Header>
+                <List.Description>
+                  This text will always have a left margin to make sure it sits alongside your icon
+              </List.Description>
+              </List.Content>
+            </List.Item>
+
+          </List>
+          </Segment>
+        </div>
         <div className="text-container">
           <Container text>
             In 1980, a teacher at Piscataway High School in New Jersey found two girls smoking in a restroom. At the school, smoking in the restrooms was a violation of school rules; smoking was allowed only in the designated smoking area. The teacher escorted the two girls to the principal's office, where they met with an assistant vice principal, Theodore Choplick. One of the girls was T.L.O., a freshman who was 14 years old. The girl who was with T.L.O. admitted that she had been smoking; T.L.O., however, denied the allegation, and said that she did not, in fact, smoke at all.
@@ -37,7 +63,7 @@ export default class NJvTLO extends React.Component {
             <br />
             <br />
 
-            T.L.O. tried to have the evidence from her purse suppressed, contending that the search violated the <div className="tooltip">Fourth Amendment<span class="tooltiptext">The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.</span></div>. She also claimed that her confession should be suppressed on the grounds that it was tainted by the unlawful search. The juvenile court rejected her Fourth Amendment arguments, although it conceded that the Fourth Amendment applies to searches by school officials. However, it held that a school official 'may search a student if that official has a reasonable suspicion that a crime has been or is in the process of being committed, or reasonable cause to believe that the search is necessary to maintain school discipline or enforce school policies.' This is a lower standard than the <div className="tooltip">'probable cause'<span class="tooltiptext">Probable cause is a requirement found in the Fourth Amendment that must usually be met before police make an arrest, conduct a search, or receive a warrant.  Courts usually find probable cause when there is a reasonable basis for believing that a crime may have been committed (for an arrest) or when evidence of the crime is present in the place to be searched (for a search).
+            T.L.O. tried to have the evidence from her purse suppressed, contending that the search violated the <div className="tooltip">Fourth Amendment<span class="tooltiptext">"The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized."</span></div>. She also claimed that her confession should be suppressed on the grounds that it was tainted by the unlawful search. The juvenile court rejected her Fourth Amendment arguments, although it conceded that the Fourth Amendment applies to searches by school officials. However, it held that a school official 'may search a student if that official has a reasonable suspicion that a crime has been or is in the process of being committed, or reasonable cause to believe that the search is necessary to maintain school discipline or enforce school policies.' This is a lower standard than the <div className="tooltip">'probable cause'<span class="tooltiptext">Probable cause is a requirement found in the Fourth Amendment that must usually be met before police make an arrest, conduct a search, or receive a warrant.  Courts usually find probable cause when there is a reasonable basis for believing that a crime may have been committed (for an arrest) or when evidence of the crime is present in the place to be searched (for a search).
            </span></div> standard, which is required when police conduct a search.
             <br />
             <br />
@@ -46,11 +72,11 @@ export default class NJvTLO extends React.Component {
             <br />
             <br />
 
-            T.L.O. appealed her conviction to the <div className="tooltip">appellate division<span className="tooltiptext">Appellate courts are the part of the judicial system that is responsible for hearing and reviewing appeals from legal cases that have already been heard in a trial-level or other lower court. People who have had an unsuccessful outcome in a trial-level or other lower court may file an appeal with an appellate court to have the decision reviewed. Appellate courts are present at the state and federal levels.</span></div>, which found no violation of the Fourth Amendment, but returned the case to juvenile court for determination of a possible Fifth Amendment problem with T.L.O.'s confession. T.L.O. then appealed the appellate division's Fourth Amendment ruling to the Supreme Court of New Jersey.
+            T.L.O. appealed her conviction to the <div className="tooltip">appellate division<span className="tooltiptext">Appellate courts are the part of the judicial system that is responsible for hearing and reviewing appeals from legal cases that have already been heard in a trial-level or other lower court. People who have had an unsuccessful outcome in a trial-level or other lower court may file an appeal with an appellate court to have the decision reviewed. Appellate courts are present at the state and federal levels.</span></div>, which found no violation of the Fourth Amendment, but returned the case to juvenile court for determination of a possible <div className="tooltip">Fifth Amendment<span className="tooltiptext">"No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a Grand Jury, except in cases arising in the land or naval forces, or in the Militia, when in actual service in time of War or public danger; nor shall any person be subject for the same offence to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation." </span></div> problem with T.L.O.'s confession. T.L.O. then appealed the appellate division's Fourth Amendment ruling to the Supreme Court of New Jersey.
             <br />
             <br />
 
-           The Supreme Court of New Jersey reversed the appellate division's ruling and ordered the evidence found in T.L.O.'s purse suppressed. The New Jersey Court relied on Supreme Court of the United States precedent to hold that whenever an official search violates constitutional rights, the evidence may not be used in a criminal case. Furthermore, the Supreme Court of New Jersey found that Choplick's search was not reasonable. Mere possession of cigarettes was not a violation of school rules; therefore, a desire for evidence of smoking in the restroom did not justify the search. In addition, the further search of the purse was not justified by the presence of cigarette rolling papers.
+            The Supreme Court of New Jersey reversed the appellate division's ruling and ordered the evidence found in T.L.O.'s purse suppressed. The New Jersey Court relied on Supreme Court of the United States <div className="tooltip">precedent<span className="tooltiptext">A case or issue decided by a court that can be used to help answer future legal questions.</span></div> to hold that whenever an official search violates constitutional rights, the evidence may not be used in a criminal case. Furthermore, the Supreme Court of New Jersey found that Choplick's search was not reasonable. Mere possession of cigarettes was not a violation of school rules; therefore, a desire for evidence of smoking in the restroom did not justify the search. In addition, the further search of the purse was not justified by the presence of cigarette rolling papers.
             <br />
             <br />
 
