@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import NewWindow from 'react-new-window'
 import {Header, Icon, Menu, Sidebar, Segment, Image, Container, Divider, List} from 'semantic-ui-react'
 
 const propTypes = {};
@@ -16,7 +17,7 @@ export default class NJvTLO extends React.Component {
     return (
       <div>
         <div className="lesson-header">
-          <Image size='medium' src='https://www.uscourts.gov/sites/default/files/styles/callout/public/tlo_podcast_large.jpg?itok=yWRr1Brq' circular centered />
+          <Image size='small' src='https://www.uscourts.gov/sites/default/files/styles/callout/public/tlo_podcast_large.jpg?itok=yWRr1Brq' circular centered />
           <Header size='huge' textAlign='center'>
           <Header.Content>New Jersey v. T.L.O.</Header.Content>
           <Header.Subheader>Should teachers be allowed to search student lockers?</Header.Subheader>
@@ -25,23 +26,27 @@ export default class NJvTLO extends React.Component {
         </div>
         <div className="lesson-sidebar">
           <Segment vertical floated='left'>  <List>
-            <List.Item as='a'>
+            <List.Item as='a' href='https://apps.oyez.org/player/#/burger8/oral_argument_audio/18116'
+              target='popup'>
               <Icon name='headphones' />
               <List.Content>
-                <List.Header>Floated Icon</List.Header>
+                <List.Header>Oral Arguments - March 28, 1984</List.Header>
                 <List.Description>
-                  This text will always have a left margin to make sure it sits alongside your icon
+                  Audio and transcript courtesy of
+                   <a href="http://www.oyez.org"> oyez.org</a>. Opens in a new window.
               </List.Description>
               </List.Content>
             </List.Item>
             <br />
             <br />
-            <List.Item as='a'>
+            <List.Item as='a' href='https://apps.oyez.org/player/#/burger8/oral_argument_audio/23720'
+            target='popup'>
               <Icon name='headphones' />
               <List.Content>
-                <List.Header>Floated Icon</List.Header>
+                <List.Header>Oral Rearguments - October 2, 1984</List.Header>
                 <List.Description>
-                  This text will always have a left margin to make sure it sits alongside your icon
+                  Audio only. Courtesy of
+                   <a href="http://www.oyez.org"> oyez.org</a>. Opens in a new window.
               </List.Description>
               </List.Content>
             </List.Item>
@@ -51,7 +56,7 @@ export default class NJvTLO extends React.Component {
         </div>
         <div className="text-container">
           <Container text>
-            In 1980, a teacher at Piscataway High School in New Jersey found two girls smoking in a restroom. At the school, smoking in the restrooms was a violation of school rules; smoking was allowed only in the designated smoking area. The teacher escorted the two girls to the principal's office, where they met with an assistant vice principal, Theodore Choplick. One of the girls was T.L.O., a freshman who was 14 years old. The girl who was with T.L.O. admitted that she had been smoking; T.L.O., however, denied the allegation, and said that she did not, in fact, smoke at all.
+            In 1980, a teacher at Piscataway High School in New Jersey found two girls smoking in a restroom. At the school, smoking in the restrooms was a violation of school rules; smoking was allowed only in the designated smoking area. The teacher escorted the two girls to the principal's office, where they met with an assistant vice principal, Theodore Choplick. One of the girls was <div className='tooltip'>T.L.O.,<span className='tooltiptext'>T.L.O. was referred to in official documentation by her initials due to the fact that she was a minor at the time. Her full name was later revealed to be Tracy Lois Odem.</span></div> a freshman who was 14 years old. The girl who was with T.L.O. admitted that she had been smoking; T.L.O., however, denied the allegation, and said that she did not, in fact, smoke at all.
             <br />
             <br />
 
