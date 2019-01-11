@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import NewWindow from 'react-new-window'
-import {Header, Icon, Menu, Sidebar, Segment, Image, Container, Divider, List} from 'semantic-ui-react'
+import {Header, Icon, Menu, Sidebar, Segment, Image, Container, Divider, List, Input, Grid} from 'semantic-ui-react'
 
 const propTypes = {};
 
@@ -36,6 +36,7 @@ export default class NJvTLO extends React.Component {
               </List.Description>
               </List.Content>
             </List.Item>
+            <br />
             <List.Item>
               <Icon name='gavel' />
               <List.Content>
@@ -45,6 +46,7 @@ export default class NJvTLO extends React.Component {
               </List.Description>
               </List.Content>
             </List.Item>
+            <br />
             <List.Item>
               <Icon name='balance scale' />
               <List.Content>
@@ -65,10 +67,12 @@ export default class NJvTLO extends React.Component {
                   Justice <a href='https://en.wikipedia.org/wiki/John_Paul_Stevens'>John Paul Stevens</a> (dissenting)
                   <br />
                   Justice <a href='https://en.wikipedia.org/wiki/William_J._Brennan_Jr.'>William J. Brennan, Jr.</a> (dissenting)
+                  <br />
                   Justice <a href='https://en.wikipedia.org/wiki/Sandra_Day_O%27Connor'>Sandra Day O'Connor</a> (concurring)
               </List.Description>
               </List.Content>
             </List.Item>
+            <br />
             <List.Item>
               <Icon name='bullhorn' />
               <List.Content>
@@ -142,7 +146,7 @@ export default class NJvTLO extends React.Component {
           </div>
         <div className="text-container">
           <Container text>
-            In 1980, a teacher at Piscataway High School in New Jersey found two girls smoking in a restroom. At the school, smoking in the restrooms was a violation of school rules; smoking was allowed only in the designated smoking area. The teacher escorted the two girls to the principal's office, where they met with an assistant vice principal, Theodore Choplick. One of the girls was <div className='tooltip'>T.L.O.,<span className='tooltiptext'>T.L.O. was referred to in official documentation by her initials due to the fact that she was a minor at the time. Her full name was later revealed to be Tracy Lois Odem.</span></div> a freshman who was 14 years old. The girl who was with T.L.O. admitted that she had been smoking; T.L.O., however, denied the allegation, and said that she did not, in fact, smoke at all.
+            In 1980, a teacher at Piscataway High School in New Jersey found two girls smoking in a restroom. At the school, smoking in the restrooms was a violation of school rules; smoking was allowed only in the designated smoking area. The teacher escorted the two girls to the principal's office, where they met with an assistant vice principal, Theodore Choplick. One of the girls was <div className='tooltip'>T.L.O.,<span className='tooltiptext'>T.L.O. was referred to in official documentation by her initials due to the fact that she was a minor at the time the case was being tried. Her full name was later revealed to be Tracy Lois Odem.</span></div> a freshman who was 14 years old. The girl who was with T.L.O. admitted that she had been smoking; T.L.O., however, denied the allegation, and said that she did not, in fact, smoke at all.
             <br />
             <br />
 
@@ -173,6 +177,20 @@ export default class NJvTLO extends React.Component {
 
              In 1983, the Supreme Court of the United States granted the State of New Jersey's petition for certiorari. In 1985, the Court handed down its decision.
           </Container>
+        </div>
+        <br />
+        <div className='answer-form'>
+        <Header textAlign='center'>Questions to Consider</Header>
+          <br />
+          <br />
+          <Grid centered container columns={2}>
+            <Grid.Column>Testing Text
+              <Image src='/images/wireframe/paragraph.png' />
+            </Grid.Column>
+            <Grid.Column>Texting Text
+              <Image src='/images/wireframe/paragraph.png' />
+            </Grid.Column>
+          </Grid>
         </div>
       </div>
     );

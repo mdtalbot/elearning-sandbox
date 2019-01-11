@@ -38,7 +38,7 @@ export default class NavBar extends Component {
             Sign Up
                   </Button>
         </Menu.Item>
-      </Menu>
+        </Menu>
     )
   }
 }
