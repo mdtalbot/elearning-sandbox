@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import NewWindow from 'react-new-window'
-import {Header, Icon, Menu, Sidebar, Segment, Image, Container, Divider, List, Input, Grid} from 'semantic-ui-react'
+import {Header, Icon, Menu, Sidebar, Segment, Image, Container, Divider, List, Input, Grid, Form, TextArea} from 'semantic-ui-react'
 
 const propTypes = {};
 
@@ -10,7 +10,20 @@ const defaultProps = {};
 export default class NJvTLO extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      answerOne: '',
+      answerTwo: ''
+    };
+  }
+
+  handleInputChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value,
+    })
+  }
+  handleSubmit = (event) => {
+    event.preventDefault();
+
   }
 
   render() {
@@ -182,13 +195,25 @@ export default class NJvTLO extends React.Component {
         <div className='answer-form'>
         <Header textAlign='center'>Questions to Consider</Header>
           <br />
-          <br />
           <Grid centered container columns={2}>
-            <Grid.Column>Testing Text
-              <Image src='/images/wireframe/paragraph.png' />
+            <Grid.Column>
+              <Form name="answer-input" onSubmit={this.handleSubmit}>
+                 The Supreme Court of the United States has made decisions that give students fewer rights than adults would have in other settings. How do you think the Court justifies doing so?
+               <br />
+                <br />
+                <TextArea className='answer-box' name='answerOne'
+                  value={this.state.answerOne} onChange={this.handleInputChange} control={TextArea}>
+                </TextArea>
+              </Form>
             </Grid.Column>
-            <Grid.Column>Texting Text
-              <Image src='/images/wireframe/paragraph.png' />
+            <Grid.Column><Form name="answer-input" onSubmit={this.handleSubmit}>
+              The Supreme Court of the United States has made decisions that give students fewer rights than adults would have in other settings. How do you think the Court justifies doing so?
+               <br />
+              <br />
+              <TextArea className='answer-box' name='answerTwo'
+                value={this.state.answerOne} onChange={this.handleInputChange} control={TextArea}>
+              </TextArea>
+            </Form>
             </Grid.Column>
           </Grid>
         </div>
