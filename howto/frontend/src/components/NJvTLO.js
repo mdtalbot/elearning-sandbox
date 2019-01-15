@@ -12,7 +12,9 @@ export default class NJvTLO extends React.Component {
     super(props);
     this.state = {
       answerOne: '',
-      answerTwo: ''
+      answerTwo: '',
+      answerThree: '',
+      answerFour: ''
     };
   }
 
@@ -197,23 +199,39 @@ export default class NJvTLO extends React.Component {
           <br />
           <Grid centered container columns={2}>
             <Grid.Column>
+              <Grid.Row>
               <Form name="answer-input" onSubmit={this.handleSubmit}>
-                 The Supreme Court of the United States has made decisions that give students fewer rights than adults would have in other settings. How do you think the Court justifies doing so?
-               <br />
-                <br />
-                <TextArea className='answer-box' name='answerOne'
-                  value={this.state.answerOne} onChange={this.handleInputChange} control={TextArea}>
-                </TextArea>
-              </Form>
+                <Form.TextArea className='answer-box' name='answerOne'
+                  value={this.state.answerOne} onChange={this.handleInputChange} style={{ minHeight: 150, maxHeight: 150 }} label="The Supreme Court of the United States has made decisions that give students fewer rights than adults would have in other settings. How do you think the Court justifies doing so?" >
+                </Form.TextArea>
+                <Form.Button>Submit</Form.Button>
+                </Form>
+              </Grid.Row>
+              <Grid.Row>
+                <Form name="answer-input" onSubmit={this.handleSubmit}>
+                  <Form.TextArea className='answer-box' name='answerThree'
+                    value={this.state.answerOne} onChange={this.handleInputChange} style={{ minHeight: 150, maxHeight: 150 }} label="The Supreme Court of the United States has made decisions that give students fewer rights than adults would have in other settings. How do you think the Court justifies doing so?" >
+                  </Form.TextArea>
+                  <Form.Button>Submit</Form.Button>
+                </Form>
+              </Grid.Row>
             </Grid.Column>
-            <Grid.Column><Form name="answer-input" onSubmit={this.handleSubmit}>
-              The Supreme Court of the United States has made decisions that give students fewer rights than adults would have in other settings. How do you think the Court justifies doing so?
-               <br />
-              <br />
-              <TextArea className='answer-box' name='answerTwo'
-                value={this.state.answerOne} onChange={this.handleInputChange} control={TextArea}>
-              </TextArea>
-            </Form>
+            <Grid.Column>
+              <Grid.Row><Form name="answer-input" onSubmit={this.handleSubmit} >
+              <Form.TextArea className='answer-box' name='answerTwo'
+                value={this.state.answerTwo} onChange={this.handleInputChange} style={{ minHeight: 150, maxHeight: 150 }} label="In a nonschool setting, are children's rights restricted in the same way that they are in a school setting? Why do you think this is the case?" >
+              </Form.TextArea>
+              <Form.Button>Submit</Form.Button>
+              </Form>
+              </Grid.Row>
+              <Grid.Row>
+                <Form name="answer-input" onSubmit={this.handleSubmit}>
+                  <Form.TextArea className='answer-box' name='answerFour'
+                    value={this.state.answerOne} onChange={this.handleInputChange} style={{ minHeight: 150, maxHeight: 150 }} label="The Supreme Court of the United States has made decisions that give students fewer rights than adults would have in other settings. How do you think the Court justifies doing so?" >
+                  </Form.TextArea>
+                  <Form.Button>Submit</Form.Button>
+                </Form>
+              </Grid.Row>
             </Grid.Column>
           </Grid>
         </div>
