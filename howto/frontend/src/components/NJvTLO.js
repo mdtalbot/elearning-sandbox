@@ -207,10 +207,11 @@ export default class NJvTLO extends React.Component {
                 <Form.Button>Submit</Form.Button>
                 </Form>
               </Grid.Row>
+              <br />
               <Grid.Row>
                 <Form name="answer-input" onSubmit={this.handleSubmit}>
                   <Form.TextArea className='answer-box' name='answerThree'
-                    value={this.state.answerOne} onChange={this.handleInputChange} style={{ minHeight: 150, maxHeight: 150 }} label="The Supreme Court of the United States has made decisions that give students fewer rights than adults would have in other settings. How do you think the Court justifies doing so?" >
+                    value={this.state.answerOne} onChange={this.handleInputChange} style={{ minHeight: 150, maxHeight: 150 }} label="While the Constitution doesn't mention a right to privacy, courts have repeatedly held that such a right exists. Do students and adults have the same right to privacy?" >
                   </Form.TextArea>
                   <Form.Button>Submit</Form.Button>
                 </Form>
@@ -224,6 +225,7 @@ export default class NJvTLO extends React.Component {
               <Form.Button>Submit</Form.Button>
               </Form>
               </Grid.Row>
+              <br />
               <Grid.Row>
                 <Form name="answer-input" onSubmit={this.handleSubmit}>
                   <Form.TextArea className='answer-box' name='answerFour'
