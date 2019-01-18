@@ -5,7 +5,7 @@ const propTypes = {};
 
 const defaultProps = {};
 
-export default function LessonQuestions(props) {
+export default function LessonFacts(props) {
   return (
     <React.Fragment>
       
@@ -13,5 +13,5 @@ export default function LessonQuestions(props) {
   );
 }
 
-LessonQuestions.propTypes = propTypes;
-LessonQuestions.defaultProps = defaultProps;
+LessonFacts.propTypes = propTypes;
+LessonFacts.defaultProps = defaultProps;
