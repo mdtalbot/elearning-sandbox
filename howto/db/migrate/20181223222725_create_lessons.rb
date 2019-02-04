@@ -6,13 +6,15 @@ class CreateLessons < ActiveRecord::Migration[5.2]
       t.text :long_desc
       t.string :grade_level
       t.string :subject
+      t.string :decided_on
+      t.string :decision
+      t.text :decided_by
+      t.text :argued_by
       t.text :lesson_text_diff_adv
       t.text :lesson_text_diff_int
       t.text :lesson_text_diff_sim
       t.string :oral_arg_one
       t.string :oral_arg_two
-      t.text :oral_xscript_one
-      t.text :oral_xscript_two
       t.string :question_one
       t.string :question_two
       t.string :question_three

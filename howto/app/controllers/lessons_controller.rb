@@ -69,6 +69,6 @@ class LessonsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def lesson_params
-      params.require(:lesson).permit(:name, :short_desc, :long_desc, :grade_level, :subject, :lesson_text_diff_adv, :lesson_text_diff_int, :lesson_text_diff_sim, :oral_arg_one, :oral_arg_two, :oral_xscript_one, :oral_xscript_two, :question_one, :question_two, :question_three, :question_four, :question_five)
+      params.require(:lesson).permit(:name, :short_desc, :long_desc, :grade_level, :subject, :lesson_text_diff_adv, :lesson_text_diff_int, :lesson_text_diff_sim, :oral_arg_one, :oral_arg_two, :question_one, :question_two, :question_three, :question_four, :question_five)
     end
 end
