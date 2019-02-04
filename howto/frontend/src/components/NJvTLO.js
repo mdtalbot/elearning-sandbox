@@ -77,7 +77,7 @@ export default class NJvTLO extends React.Component {
                   <br />
                   Justice <a href='https://en.wikipedia.org/wiki/Lewis_F._Powell_Jr.'>Lewis F. Powell, Jr.</a> (concurring)
                   <br />
-                  Justice <a href="https://en.wikipedia.org/wiki/William_Rehnquist">William Rehnquist</a> (concurring)
+                  Justice <a href='https://en.wikipedia.org/wiki/William_Rehnquist'>William Rehnquist</a> (concurring)
                   <br />
                   Justice <a href='https://en.wikipedia.org/wiki/John_Paul_Stevens'>John Paul Stevens</a> (dissenting)
                   <br />
