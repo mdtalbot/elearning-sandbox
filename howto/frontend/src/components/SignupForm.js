@@ -10,7 +10,8 @@ export default class SignupForm extends React.Component {
       first_name: '',
       last_name: '',
       email: '',
-      password: ''
+      password: '',
+      is_teacher: false
     };
   }
 
@@ -34,7 +35,29 @@ export default class SignupForm extends React.Component {
           <Input type='password' placeholder='Enter a password.' />
         </Form.Field>
         <Form.Field>
-          
+          <label>Re-enter password</label>
+          <Input type='password' placeholder='Re-enter your password.' />
+        </Form.Field>
+        I am a:
+        <Form.Field>
+          <Checkbox
+            radio
+            label='Student'
+            name='checkboxRadioGroup'
+            value='student'
+            checked={this.state.is_teacher === false }
+            onChange={this.handleChange}
+          />
+        </Form.Field>
+        <Form.Field>
+          <Checkbox
+            radio
+            label='Teacher'
+            name='checkboxRadioGroup'
+            value='teacher'
+            checked={this.state.is_teacher === true }
+            onChange={this.handleChange}
+          />
         </Form.Field>
       </Form>
     );
