@@ -1,0 +1,2 @@
+class LessonOralArgument < ApplicationRecord
+end

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Link url:</strong>
+  <%= @oral_arg.link_url %>
+</p>
+
+<p>
+  <strong>Header text:</strong>
+  <%= @oral_arg.header_text %>
+</p>
+
+<p>
+  <strong>Desc text:</strong>
+  <%= @oral_arg.desc_text %>
+</p>
+
+<%= link_to 'Edit', edit_oral_arg_path(@oral_arg) %> |
+<%= link_to 'Back', oral_args_path %>

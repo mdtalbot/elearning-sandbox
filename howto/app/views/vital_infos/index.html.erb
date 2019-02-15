@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Vital Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vital_infos.each do |vital_info| %>
+      <tr>
+        <td><%= link_to 'Show', vital_info %></td>
+        <td><%= link_to 'Edit', edit_vital_info_path(vital_info) %></td>
+        <td><%= link_to 'Destroy', vital_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vital Info', new_vital_info_path %>

@@ -1,0 +1,17 @@
+<%= form_with(model: lesson_opinion, local: true) do |form| %>
+  <% if lesson_opinion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(lesson_opinion.errors.count, "error") %> prohibited this lesson_opinion from being saved:</h2>
+
+      <ul>
+      <% lesson_opinion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

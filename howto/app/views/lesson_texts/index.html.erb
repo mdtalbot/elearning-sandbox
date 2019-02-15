@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lesson Texts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Adv</th>
+      <th>Int</th>
+      <th>Sim</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lesson_texts.each do |lesson_text| %>
+      <tr>
+        <td><%= lesson_text.adv %></td>
+        <td><%= lesson_text.int %></td>
+        <td><%= lesson_text.sim %></td>
+        <td><%= link_to 'Show', lesson_text %></td>
+        <td><%= link_to 'Edit', edit_lesson_text_path(lesson_text) %></td>
+        <td><%= link_to 'Destroy', lesson_text, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lesson Text', new_lesson_text_path %>

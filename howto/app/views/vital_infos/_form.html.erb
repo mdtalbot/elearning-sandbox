@@ -1,0 +1,17 @@
+<%= form_with(model: vital_info, local: true) do |form| %>
+  <% if vital_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(vital_info.errors.count, "error") %> prohibited this vital_info from being saved:</h2>
+
+      <ul>
+      <% vital_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

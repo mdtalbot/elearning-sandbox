@@ -1,0 +1,2 @@
+class VitalInfo < ApplicationRecord
+end

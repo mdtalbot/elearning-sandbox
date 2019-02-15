@@ -1,0 +1,2 @@
+module LessonOpinionsHelper
+end

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Decision date:</strong>
+  <%= @lesson_vital_fact.decision_date %>
+</p>
+
+<p>
+  <strong>Decision:</strong>
+  <%= @lesson_vital_fact.decision %>
+</p>
+
+<p>
+  <strong>Plaintiff:</strong>
+  <%= @lesson_vital_fact.plaintiff %>
+</p>
+
+<p>
+  <strong>Defendant:</strong>
+  <%= @lesson_vital_fact.defendant %>
+</p>
+
+<p>
+  <strong>Plaintiff att:</strong>
+  <%= @lesson_vital_fact.plaintiff_att %>
+</p>
+
+<p>
+  <strong>Defendant att:</strong>
+  <%= @lesson_vital_fact.defendant_att %>
+</p>
+
+<p>
+  <strong>Justices:</strong>
+  <%= @lesson_vital_fact.justices %>
+</p>
+
+<%= link_to 'Edit', edit_lesson_vital_fact_path(@lesson_vital_fact) %> |
+<%= link_to 'Back', lesson_vital_facts_path %>

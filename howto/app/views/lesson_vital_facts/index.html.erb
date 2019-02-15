@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lesson Vital Facts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Decision date</th>
+      <th>Decision</th>
+      <th>Plaintiff</th>
+      <th>Defendant</th>
+      <th>Plaintiff att</th>
+      <th>Defendant att</th>
+      <th>Justices</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lesson_vital_facts.each do |lesson_vital_fact| %>
+      <tr>
+        <td><%= lesson_vital_fact.decision_date %></td>
+        <td><%= lesson_vital_fact.decision %></td>
+        <td><%= lesson_vital_fact.plaintiff %></td>
+        <td><%= lesson_vital_fact.defendant %></td>
+        <td><%= lesson_vital_fact.plaintiff_att %></td>
+        <td><%= lesson_vital_fact.defendant_att %></td>
+        <td><%= lesson_vital_fact.justices %></td>
+        <td><%= link_to 'Show', lesson_vital_fact %></td>
+        <td><%= link_to 'Edit', edit_lesson_vital_fact_path(lesson_vital_fact) %></td>
+        <td><%= link_to 'Destroy', lesson_vital_fact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lesson Vital Fact', new_lesson_vital_fact_path %>

@@ -1,5 +1,6 @@
 class LessonsController < ApplicationController
   before_action :set_lesson, only: [:show, :edit, :update, :destroy]
+  has_many :exercises, :lesson_texts, :lesson_vital_facts, :opinions, :oral_args
 
   # GET /lessons
   # GET /lessons.json
@@ -69,6 +70,6 @@ class LessonsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def lesson_params
-      params.require(:lesson).permit(:name, :short_desc, :long_desc, :grade_level, :subject, :decided_on, :decision, :justices, :plaintiff, :defendant, :plaintiff_att, :defendant_att, :lesson_text_diff_adv, :lesson_text_diff_int, :lesson_text_diff_sim, :oral_arg_link_one, :oral_arg_link_two, :oral_arg_text_one, :oral_arg_text_two, :question_one, :question_two, :question_three, :question_four, :question_five)
+      params.require(:lesson).permit(:name, :front_tagline, :page_tagline, :header_img_url)
     end
 end

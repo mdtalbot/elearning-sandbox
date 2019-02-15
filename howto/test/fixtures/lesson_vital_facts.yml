@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  decision_date: MyString
+  decision: MyString
+  plaintiff: MyString
+  defendant: MyString
+  plaintiff_att: MyString
+  defendant_att: MyString
+  justices: MyString
+
+two:
+  decision_date: MyString
+  decision: MyString
+  plaintiff: MyString
+  defendant: MyString
+  plaintiff_att: MyString
+  defendant_att: MyString
+  justices: MyString

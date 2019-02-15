@@ -1,0 +1,2 @@
+class LessonOpinion < ApplicationRecord
+end

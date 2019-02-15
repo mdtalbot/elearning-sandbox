@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Link url:</strong>
+  <%= @opinion.link_url %>
+</p>
+
+<p>
+  <strong>Header text:</strong>
+  <%= @opinion.header_text %>
+</p>
+
+<p>
+  <strong>Desc text:</strong>
+  <%= @opinion.desc_text %>
+</p>
+
+<%= link_to 'Edit', edit_opinion_path(@opinion) %> |
+<%= link_to 'Back', opinions_path %>

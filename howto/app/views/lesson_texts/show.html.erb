@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Adv:</strong>
+  <%= @lesson_text.adv %>
+</p>
+
+<p>
+  <strong>Int:</strong>
+  <%= @lesson_text.int %>
+</p>
+
+<p>
+  <strong>Sim:</strong>
+  <%= @lesson_text.sim %>
+</p>
+
+<%= link_to 'Edit', edit_lesson_text_path(@lesson_text) %> |
+<%= link_to 'Back', lesson_texts_path %>
