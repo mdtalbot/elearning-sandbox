@@ -5,12 +5,13 @@ class LessonTextsController < ApplicationController
   # GET /lesson_texts
   # GET /lesson_texts.json
   def index
-    @lesson_texts = LessonText.all
+    render json: LessonText.all
   end
 
   # GET /lesson_texts/1
   # GET /lesson_texts/1.json
   def show
+    render json: LessonText.find(params[:id])
   end
 
   # GET /lesson_texts/new

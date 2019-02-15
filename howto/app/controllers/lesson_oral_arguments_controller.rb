@@ -5,12 +5,13 @@ class LessonOralArgumentsController < ApplicationController
   # GET /lesson_oral_arguments
   # GET /lesson_oral_arguments.json
   def index
-    @lesson_oral_arguments = LessonOralArgument.all
+    render json: LessonOralArgument.all
   end
 
   # GET /lesson_oral_arguments/1
   # GET /lesson_oral_arguments/1.json
   def show
+    render json: LessonOralArgument.find(params[:id])
   end
 
   # GET /lesson_oral_arguments/new

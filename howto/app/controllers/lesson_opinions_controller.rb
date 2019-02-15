@@ -5,12 +5,13 @@ class LessonOpinionsController < ApplicationController
   # GET /lesson_opinions
   # GET /lesson_opinions.json
   def index
-    @lesson_opinions = LessonOpinion.all
+    render json: LessonOpinion.all
   end
 
   # GET /lesson_opinions/1
   # GET /lesson_opinions/1.json
   def show
+    render json: LessonOpinion.find(params[:id])
   end
 
   # GET /lesson_opinions/new

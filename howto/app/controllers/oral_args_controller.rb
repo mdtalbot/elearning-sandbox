@@ -5,12 +5,13 @@ class OralArgsController < ApplicationController
   # GET /oral_args
   # GET /oral_args.json
   def index
-    @oral_args = OralArg.all
+    render json: OralArg.all
   end
 
   # GET /oral_args/1
   # GET /oral_args/1.json
   def show
+    render json: OralArg.find(params[:id])
   end
 
   # GET /oral_args/new

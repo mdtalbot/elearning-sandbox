@@ -5,12 +5,13 @@ class OpinionsController < ApplicationController
   # GET /opinions
   # GET /opinions.json
   def index
-    @opinions = Opinion.all
+    render json: Opinion.all
   end
 
   # GET /opinions/1
   # GET /opinions/1.json
   def show
+    render json: Opinion.find(params[:id])
   end
 
   # GET /opinions/new

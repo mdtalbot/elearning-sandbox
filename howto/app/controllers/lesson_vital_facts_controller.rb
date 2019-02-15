@@ -5,12 +5,13 @@ class LessonVitalFactsController < ApplicationController
   # GET /lesson_vital_facts
   # GET /lesson_vital_facts.json
   def index
-    @lesson_vital_facts = LessonVitalFact.all
+    render json: LessonVitalFact.all
   end
 
   # GET /lesson_vital_facts/1
   # GET /lesson_vital_facts/1.json
   def show
+    render json: LessonVitalFact.find(params[:id])
   end
 
   # GET /lesson_vital_facts/new

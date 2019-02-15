@@ -5,12 +5,13 @@ class VitalInfosController < ApplicationController
   # GET /vital_infos
   # GET /vital_infos.json
   def index
-    @vital_infos = VitalInfo.all
+    render json: VitalInfo.all
   end
 
   # GET /vital_infos/1
   # GET /vital_infos/1.json
   def show
+    render json: VitalInfo.find(params[:id])
   end
 
   # GET /vital_infos/new
