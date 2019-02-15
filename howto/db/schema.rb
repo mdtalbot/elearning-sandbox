@@ -14,16 +14,20 @@ ActiveRecord::Schema.define(version: 2019_02_15_221552) do
 
   create_table "exercises", force: :cascade do |t|
     t.string "question"
+    t.integer "lesson_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["lesson_id"], name: "index_exercises_on_lesson_id"
   end
 
   create_table "lesson_texts", force: :cascade do |t|
     t.text "adv"
     t.text "int"
     t.text "sim"
+    t.integer "lesson_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["lesson_id"], name: "index_lesson_texts_on_lesson_id"
   end
 
   create_table "lesson_vital_facts", force: :cascade do |t|
@@ -34,9 +38,11 @@ ActiveRecord::Schema.define(version: 2019_02_15_221552) do
     t.string "plaintiff_att"
     t.string "defendant_att"
     t.string "justices"
+    t.integer "lesson_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["justices"], name: "index_lesson_vital_facts_on_justices"
+    t.index ["lesson_id"], name: "index_lesson_vital_facts_on_lesson_id"
   end
 
   create_table "lessons", force: :cascade do |t|
@@ -52,16 +58,20 @@ ActiveRecord::Schema.define(version: 2019_02_15_221552) do
     t.string "link_url"
     t.string "header_text"
     t.string "desc_text"
+    t.integer "lesson_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["lesson_id"], name: "index_opinions_on_lesson_id"
   end
 
   create_table "oral_args", force: :cascade do |t|
     t.string "link_url"
     t.string "header_text"
     t.string "desc_text"
+    t.integer "lesson_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["lesson_id"], name: "index_oral_args_on_lesson_id"
   end
 
   create_table "users", force: :cascade do |t|

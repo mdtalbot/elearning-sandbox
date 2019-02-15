@@ -8,6 +8,7 @@ class CreateLessonVitalFacts < ActiveRecord::Migration[5.2]
       t.string :plaintiff_att
       t.string :defendant_att
       t.string :justices, array: true
+      t.references :lesson, foreign_key: true
 
       t.timestamps
     end
