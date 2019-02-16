@@ -5,12 +5,13 @@ class LessonsController < ApplicationController
   # GET /lessons
   # GET /lessons.json
   def index
-    @lessons = Lesson.all
+    render json: Lesson.all
   end
 
   # GET /lessons/1
   # GET /lessons/1.json
   def show
+    render json: Lesson.find(params[:id])
   end
 
   # GET /lessons/new

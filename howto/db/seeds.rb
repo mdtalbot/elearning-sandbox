@@ -44,3 +44,5 @@ LessonText.create(adv: "In 1980, a teacher at Piscataway High School in New Jers
             <br />
 
              In 1983, the Supreme Court of the United States granted the State of New Jersey's petition for certiorari. In 1985, the Court handed down its decision.)", int: "", sim: "", lesson_id: 1)
+Exercise.create(question: "The Supreme Court of the United States has made decisions that give students fewer rights than adults would have in other settings. How do you think the court justifies doing so?", lesson_id: 1)
+
