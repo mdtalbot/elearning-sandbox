@@ -8,8 +8,15 @@ export default class LandingPage extends React.Component {
     this.state = {
       userName: '',
       userLogin: '',
-      userPassword: ''
+      userPassword: '',
+      lessons: {}
     };
+  }
+
+  componentDidMount() {
+    fetch('http://localhost:4000/lessons')
+      .then(res => res.json())
+      .then(res => this.setState({ lessons: res }))
   }
 
   render() {

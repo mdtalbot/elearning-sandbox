@@ -1,6 +1,6 @@
 class OpinionsController < ApplicationController
   before_action :set_opinion, only: [:show, :edit, :update, :destroy]
-  belongs_to :lesson, index: true
+  
 
   # GET /opinions
   # GET /opinions.json

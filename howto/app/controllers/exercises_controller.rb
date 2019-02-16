@@ -1,6 +1,6 @@
 class ExercisesController < ApplicationController
   before_action :set_exercise, only: [:show, :edit, :update, :destroy]
-  belongs_to :lesson, index: true
+  
 
   # GET /exercises
   # GET /exercises.json

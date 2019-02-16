@@ -1,2 +1,0 @@
-class VitalInfo < ApplicationRecord
-end

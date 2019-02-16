@@ -1,6 +1,6 @@
 class LessonVitalFactsController < ApplicationController
   before_action :set_lesson_vital_fact, only: [:show, :edit, :update, :destroy]
-  belongs_to :lesson, index: true
+  
 
   # GET /lesson_vital_facts
   # GET /lesson_vital_facts.json

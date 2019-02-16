@@ -1,6 +1,6 @@
 class OralArgsController < ApplicationController
   before_action :set_oral_arg, only: [:show, :edit, :update, :destroy]
-  belongs_to :lesson, index: true
+  
 
   # GET /oral_args
   # GET /oral_args.json

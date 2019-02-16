@@ -1,6 +1,5 @@
 class LessonsController < ApplicationController
   before_action :set_lesson, only: [:show, :edit, :update, :destroy]
-  has_many :exercises, :lesson_texts, :lesson_vital_facts, :opinions, :oral_args
 
   # GET /lessons
   # GET /lessons.json

@@ -1,6 +1,6 @@
 class LessonTextsController < ApplicationController
   before_action :set_lesson_text, only: [:show, :edit, :update, :destroy]
-  belongs_to :lesson, index: true
+  
 
   # GET /lesson_texts
   # GET /lesson_texts.json
