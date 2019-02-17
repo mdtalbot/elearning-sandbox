@@ -1,34 +1,40 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import NJvTLO from '../../components/NJvTLO'
-
-const propTypes = {};
-
-const defaultProps = {};
+import WelcomePage from '../../components/WelcomePage'
+import LessonPage from '../../components/LessonPage'
 
 export default class LessonContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      lessons: {},
       selectedLesson: {}
     };
   }
 
-  handleInputChange = (event) => {
-    this.setState({
-      [event.target.name]: event.target.value,
-    })
+  componentDidMount() {
+    fetch('http://localhost:4000/lessons')
+      .then(res => res.json())
+      .then(res => this.setState({ lessons: res }))
   }
-  handleSubmit = (event) => {
-    event.preventDefault();
-  }
+
+  // handleInputChange = (event) => {
+  //   this.setState({
+  //     [event.target.name]: event.target.value,
+  //   })
+  // }
+  // handleSubmit = (event) => {
+  //   event.preventDefault();
+  // }
 
   render() {
-    return (
-      'Test string!'
-    );
+    if (!this.state.selectedLesson.length) {
+      return (
+        <WelcomePage />
+      )
+    } else {
+      return (
+        <LessonPage />
+      )
+    }
   }
 }
-
- LessonContainer.propTypes = propTypes;
- LessonContainer.defaultProps = defaultProps;

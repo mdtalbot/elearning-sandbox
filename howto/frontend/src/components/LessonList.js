@@ -1,5 +1,5 @@
 import React from 'react';
-import Route from 'react-router-dom'
+import List from 'semantic-ui-react'
 
 export default function LessonList(props) {
   console.log(props)
@@ -10,7 +10,7 @@ export default function LessonList(props) {
   } else {
     return (
       <List selection verticalAlign='middle' size='big'>
-        {props.lessons.map((lesson, index) => <LessonListItem key={index} name={lesson.name} headerImg={lesson.headerImg} tagline={lesson.tagline} handleLessonClick={props.handleLessonClick} />
+        {props.lessons.map((lesson, index) => <LessonListItem key={index} name={lesson.name} headerImg={lesson.headerImg} tagline={lesson.tagline} value={lesson.id} handleLessonClick={props.handleLessonClick} />
         )}
       </List>
     )

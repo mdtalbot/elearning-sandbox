@@ -3,10 +3,6 @@ import PropTypes from 'prop-types';
 import NewWindow from 'react-new-window'
 import {Header, Icon, Menu, Sidebar, Segment, Image, Container, Divider, List, Input, Grid, Form, TextArea} from 'semantic-ui-react'
 
-const propTypes = {};
-
-const defaultProps = {};
-
 export default class NJvTLO extends React.Component {
   constructor(props) {
     super(props);
@@ -240,6 +236,3 @@ export default class NJvTLO extends React.Component {
     );
   }
 }
-
- NJvTLO.propTypes = propTypes;
- NJvTLO.defaultProps = defaultProps;
