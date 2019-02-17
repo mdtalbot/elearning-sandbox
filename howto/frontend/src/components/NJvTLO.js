@@ -25,7 +25,6 @@ export default class NJvTLO extends React.Component {
   }
   handleSubmit = (event) => {
     event.preventDefault();
-
   }
 
   render() {

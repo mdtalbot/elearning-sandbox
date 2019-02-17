@@ -9,12 +9,23 @@ const defaultProps = {};
 export default class LessonContainer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      selectedLesson: {}
+    };
+  }
+
+  handleInputChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value,
+    })
+  }
+  handleSubmit = (event) => {
+    event.preventDefault();
   }
 
   render() {
     return (
-      <NJvTLO />
+      'Test string!'
     );
   }
 }
