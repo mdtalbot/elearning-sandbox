@@ -37,13 +37,13 @@ export default class LessonContainer extends React.Component {
 
   render() {
     console.log(this.state.selectedLesson.length)
-    if (this.state.selectedLesson.length) {
+    if (Object.getOwnPropertyNames(this.state.selectedLesson).length === 0) {
       return (
-        <LessonPage />
+        <WelcomePage lessons={this.state.lessons} handleLessonClick={this.handleLessonClick} />
       )
     } else {
       return (
-        <WelcomePage lessons={this.state.lessons} handleLessonClick={this.handleLessonClick} />
+        <LessonPage lesson={this.state.selectedLesson}/>
       )
     }
   }
