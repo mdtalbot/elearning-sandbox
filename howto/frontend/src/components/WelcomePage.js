@@ -1,4 +1,5 @@
 import React from 'react';
+import LessonList from './LessonList'
 
 
 export default class WelcomePage extends React.Component {
@@ -9,9 +10,7 @@ export default class WelcomePage extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
-        Test Text again!
-      </React.Fragment>
+      <LessonList lessons={this.props.lessons} handleLessonClick={this.props.handleLessonClick}/>
     );
   }
 }

@@ -8,7 +8,7 @@ const defaultProps = {};
 export default function LessonPage(props) {
   return (
     <React.Fragment>
-      
+      'This is test text.'
     </React.Fragment>
   );
 }

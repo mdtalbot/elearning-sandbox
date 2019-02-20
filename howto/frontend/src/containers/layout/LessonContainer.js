@@ -6,7 +6,7 @@ export default class LessonContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      lessons: {},
+      lessons: [],
       selectedLesson: {}
     };
   }
@@ -16,6 +16,15 @@ export default class LessonContainer extends React.Component {
       .then(res => res.json())
       .then(res => this.setState({ lessons: res }))
   }
+
+  handleLessonClick = (id) => {
+    const findLesson = this.state.lessons.find(lesson => lesson.id === id);
+    this.setState({ selectedLesson: findLesson });
+  }
+
+  // handleLessonClick = (event) => {
+  //   this.setState({selectedLesson: event.target.value})
+  // }
 
   // handleInputChange = (event) => {
   //   this.setState({
@@ -27,13 +36,14 @@ export default class LessonContainer extends React.Component {
   // }
 
   render() {
-    if (!this.state.selectedLesson.length) {
+    console.log(this.state.selectedLesson.length)
+    if (this.state.selectedLesson.length) {
       return (
-        <WelcomePage />
+        <LessonPage />
       )
     } else {
       return (
-        <LessonPage />
+        <WelcomePage lessons={this.state.lessons} handleLessonClick={this.handleLessonClick} />
       )
     }
   }
