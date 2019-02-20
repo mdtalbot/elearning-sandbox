@@ -1,5 +1,7 @@
 import React from 'react';
 import { Header, Segment, Image, Container, List, Grid } from 'semantic-ui-react'
+import LessonSidebar from './LessonSidebar'
+import LessonText from './LessonText'
 
 export default class LessonPage extends React.Component {
   constructor(props) {
@@ -18,7 +20,10 @@ export default class LessonPage extends React.Component {
           </Header>
         </div>
 
-        
+        <LessonSidebar facts={this.props.lesson.lesson_vital_facts} opinions={this.props.lesson.opinions} oralArgs={this.props.lesson.oral_args} />
+
+        <LessonText text={this.props.lesson.lesson_texts} />
+
       </div>
     );
   }
