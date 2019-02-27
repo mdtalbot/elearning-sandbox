@@ -50,4 +50,4 @@ Lesson.create(name: "Tinker v. Des Moines", front_tagline: "A case where a stude
 
 Lesson.create(name: "Engel v. Vitale", front_tagline: "A case in which a school prayer came under fire for violating the Establishment Clause of the First Amendment", page_tagline: "Does the reading of a school prayer violate the First Amendment?", header_img_url: "https://4d6ab1ae1m81qn73x25fcrb1-wpengine.netdna-ssl.com/wp-content/uploads/2013/11/school-prayer1-300x300.jpg")
 
-
+Lesson.create(name: "West Virginia Board of Education v. Barnette", front_tagline: "A case which examined whether or not forcing students to recite the Pledge of Allegiance violates their First Amendment rights", page_tagline: "Can schools force students to salute the American flag or recite the Pledge of Allegiance?", header_img_url: "https://constitutionallawreporter.com/wp-content/uploads/2015/09/West-Virginia-State-Board-of-Education-v.-Barnette.gif")
