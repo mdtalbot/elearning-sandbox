@@ -47,3 +47,7 @@ LessonText.create(adv: "In 1980, a teacher at Piscataway High School in New Jers
 Exercise.create(question: "The Supreme Court of the United States has made decisions that give students fewer rights than adults would have in other settings. How do you think the court justifies doing so?", lesson_id: 1)
 
 Lesson.create(name: "Tinker v. Des Moines", front_tagline: "A case where a student protest kicked off a heated debate about students' First Amendment rights", page_tagline: "What rights to free speech do students have on school grounds?", header_img_url: "https://cdn.kastatic.org/ka-perseus-images/84d7fdd42bbf1bd7586494936c68df7a506ee716.jpg")
+
+Lesson.create(name: "Engel v. Vitale", front_tagline: "A case in which a school prayer came under fire for violating the Establishment Clause of the First Amendment", page_tagline: "Does the reading of a school prayer violate the First Amendment?", header_img_url: "https://4d6ab1ae1m81qn73x25fcrb1-wpengine.netdna-ssl.com/wp-content/uploads/2013/11/school-prayer1-300x300.jpg")
+
+
