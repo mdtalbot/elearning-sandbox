@@ -24,7 +24,7 @@ LessonVitalFact.create(decision_date: "January 15, 1985", decision: "6-3 in favo
                   <br />
               Justice <a href='https://en.wikipedia.org/wiki/William_J._Brennan_Jr.'>William J. Brennan, Jr.</a> (dissenting)
                   <br />
-              Justice <a href='https://en.wikipedia.org/wiki/Sandra_Day_O%27Connor'>Sandra Day O'Connor</a> (concurring)", plaintiff: "The State of New Jersey", defendant: "T.L.O.", plaintiff_att: "Allan J. Nodes (for New Jersey", defendant_att: "Lois de Julio (for T.L.O.)", lesson_id: 1)
+              Justice <a href='https://en.wikipedia.org/wiki/Sandra_Day_O%27Connor'>Sandra Day O'Connor</a> (concurring)", plaintiff: "The State of New Jersey", defendant: "T.L.O.", plaintiff_att: "Allan J. Nodes (for New Jersey)", defendant_att: "Lois de Julio (for T.L.O.)", lesson_id: 1)
 
 OralArg.create(link_url: "https://apps.oyez.org/player/#/burger8/oral_argument_audio/18116", header_text: "Oral Arguments - March 28, 1984", desc_text: "Audio and transcript courtesy of <a href='http://www.oyez.org'> oyez.org</a>. Opens in a new window.", lesson_id: 1)
 
@@ -63,6 +63,37 @@ LessonText.create(adv: "In 1980, a teacher at Piscataway High School in New Jers
 Exercise.create(question: "The Supreme Court of the United States has made decisions that give students fewer rights than adults would have in other settings. How do you think the court justifies doing so?", lesson_id: 1)
 
 Lesson.create(name: "Tinker v. Des Moines", front_tagline: "A case where a student protest kicked off a heated debate about students' First Amendment rights", page_tagline: "What rights to free speech do students have on school grounds?", header_img_url: "https://sites.google.com/a/nv.ccsd.net/tinker-v-des-moines/_/rsrc/1367515638288/home/peace.png?height=320&width=320")
+
+LessonVitalFact.create(decision_date: "February 4, 1969", decision: "7-2 in favor of the Tinker family", justices: "Chief Justice <a href='https://en.wikipedia.org/wiki/Earl_Warren'>Earl Warren</a> (majority opinion)
+                  <br />
+              Justice <a href='https://en.wikipedia.org/wiki/Byron_White'>Byron White</a> (concurring)
+                  <br />
+              Justice <a href='https://en.wikipedia.org/wiki/Thurgood_Marshall'>Thurgood Marshall</a> (majority opinion)
+                  <br />
+              Justice <a href='https://en.wikipedia.org/wiki/Abe_Fortas'>Abe Fortas</a> (majority opinion)
+                  <br />
+              Justice <a href='https://en.wikipedia.org/wiki/Potter_Stewart'>Potter Stewart</a> (concurring)
+                  <br />
+              Justice <a href='https://en.wikipedia.org/wiki/Hugo_Black'>Hugo Black</a> (dissenting)
+                  <br />
+              Justice <a href='https://en.wikipedia.org/wiki/William_O._Douglas'>William O. Douglas</a> (majority opinion)
+                  <br />
+              Justice <a href='https://en.wikipedia.org/wiki/William_J._Brennan_Jr.'>William J. Brennan, Jr.</a> (majority opinion)
+                  <br />
+              Justice <a href='https://en.wikipedia.org/wiki/John_Marshall_Harlan_(1899%E2%80%931971)'>John M. Harlan II</a> (dissenting)", plaintiff: "John F. Tinker, Mary Beth Tinker, Christopher Eckhardt", defendant: "Des Moines Independent Community School District", plaintiff_att: "Dan Johnston (for Tinker, et al.)", defendant_att: "Alan Herrick (for Des Moines CISD)", lesson_id: 2)
+
+OralArg.create(link_url: "https://apps.oyez.org/player/#/warren15/oral_argument_audio/15012", header_text: "Oral Arguments - November 12, 1968", desc_text: "Audio and transcript courtesy of <a href='http://www.oyez.org'> oyez.org</a>. Opens in a new window.", lesson_id: 2)
+
+Opinion.create(link_url: "https://www.law.cornell.edu/supremecourt/text/393/503#writing-USSC_CR_0393_0503_ZO", header_text: "Text of the Majority Opinion", desc_text: "Authored by Justice Fortas and concurred with by Chief Justice Warren alongside Justices Brennan, Marshall, and Douglas. Text courtesy of Cornell Law School.", lesson_id: 2)
+
+Opinion.create(link_url: "https://www.law.cornell.edu/supremecourt/text/393/503#writing-USSC_CR_0393_0503_ZC", header_text: "Text of Justice Stewart's Opinion", desc_text: "Authored by Justice Stewart in concurrence with the majority opinion. Text courtesy of Cornell Law School.", lesson_id: 2)
+
+Opinion.create(link_url: "https://www.law.cornell.edu/supremecourt/text/393/503#writing-USSC_CR_0393_0503_ZC1", header_text: "Text of Justice White's Opinion", desc_text: "Authored by Justice White in concurrence with the majority opinion. Text courtesy of Cornell Law School.", lesson_id: 2)
+
+Opinion.create(link_url: "https://www.law.cornell.edu/supremecourt/text/393/503#writing-USSC_CR_0393_0503_ZD", header_text: "Text of Justice Black's Opinion", desc_text: "Authored by Justice Black in dissent with the majority opinion. Text courtesy of Cornell Law School.", lesson_id: 2)
+
+Opinion.create(link_url: "https://www.law.cornell.edu/supremecourt/text/393/503#writing-USSC_CR_0393_0503_ZD1", header_text: "Text of Justice Harlan's Opinion", desc_text: "Authored by Justice Harlan in dissent with the majority opinion. Text courtesy of Cornell Law School.", lesson_id: 2)
+
 
 Lesson.create(name: "Engel v. Vitale", front_tagline: "A case in which a school prayer came under fire for violating the Establishment Clause of the First Amendment", page_tagline: "Does the reading of a school prayer violate the First Amendment?", header_img_url: "https://4d6ab1ae1m81qn73x25fcrb1-wpengine.netdna-ssl.com/wp-content/uploads/2013/11/school-prayer1-300x300.jpg")
 

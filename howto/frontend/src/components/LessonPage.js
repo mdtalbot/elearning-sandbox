@@ -7,10 +7,10 @@ export default class LessonPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      answerOne = '',
-      answerTwo = '',
-      answerThree = '',
-      answerFour = ''
+      answerOne: '',
+      answerTwo: '',
+      answerThree: '',
+      answerFour: ''
     };
   }
 
@@ -45,7 +45,7 @@ export default class LessonPage extends React.Component {
             <Grid.Column>
               <Grid.Row>
                 <Form name="answer-input" onSubmit={this.handleSubmit}>
-                  <Form.TextArea className='answer-box' name='answerOne'
+                  {/* <Form.TextArea className='answer-box' name='answerOne'
                     value={this.state.answerOne} onChange={this.handleInputChange} style={{ minHeight: 150, maxHeight: 150 }} label="The Supreme Court of the United States has made decisions that give students fewer rights than adults would have in other settings. How do you think the Court justifies doing so?" >
                   </Form.TextArea>
                   <Form.Button>Submit</Form.Button>
@@ -74,7 +74,7 @@ export default class LessonPage extends React.Component {
                 <Form name="answer-input" onSubmit={this.handleSubmit}>
                   <Form.TextArea className='answer-box' name='answerFour'
                     value={this.state.answerOne} onChange={this.handleInputChange} style={{ minHeight: 150, maxHeight: 150 }} label="The Supreme Court of the United States has made decisions that give students fewer rights than adults would have in other settings. How do you think the Court justifies doing so?" >
-                  </Form.TextArea>
+                  </Form.TextArea> */}
                   <Form.Button>Submit</Form.Button>
                 </Form>
               </Grid.Row>
