@@ -3,16 +3,18 @@ import { List, Icon } from 'semantic-ui-react'
 
 export default function SidebarOralArgItem(props) {
   return (
-    <List.Item as='a' href={props.link_url}
+    <List.Item as='a' href={props.linkUrl}
       target='popup'>
       <Icon name='headphones' />
       <List.Content>
-        <List.Header>{props.header_text}</List.Header>
+        <List.Header>{props.header}</List.Header>
         <List.Description>
-          {props.desc_text}
+          <div dangerouslySetInnerHTML={{ __html: props.description }} />
+          <br></br>
+          {/* {props.description} */}
         </List.Description>
       </List.Content>
-    </List.Item>
+      </List.Item>
   );
 }
 

@@ -8,7 +8,23 @@
 
 Lesson.create(name: "New Jersey v. T.L.O.", front_tagline: "A case that examined whether school administrators have the right to search student lockers under the Fourth Amendment", page_tagline: "Should teachers be allowed to search student lockers?", header_img_url: "https://www.uscourts.gov/sites/default/files/styles/callout/public/tlo_podcast_large.jpg?itok=yWRr1Brq")
 
-LessonVitalFact.create(decision_date: "January 15, 1985", decision: "6-3 in favor of the State of New Jersey", justices: ["Chief Justice <a href='https://en.wikipedia.org/wiki/Warren_E._Burger'>Warren Burger</a> (concurring)", "Justice <a href='https://en.wikipedia.org/wiki/Byron_White'>Byron White</a> (majority opinion)", "Justice <a href='https://en.wikipedia.org/wiki/Thurgood_Marshall'>Thurgood Marshall</a> (dissenting)", "Justice <a href='https://en.wikipedia.org/wiki/Harry_Blackmun'>Harry Blackmun</a> (concurring)", "Justice <a href='https://en.wikipedia.org/wiki/Lewis_F._Powell_Jr.'>Lewis F. Powell, Jr.</a> (concurring)", "Justice <a href='https://en.wikipedia.org/wiki/William_Rehnquist'>William Rehnquist</a> (concurring)", "Justice <a href='https://en.wikipedia.org/wiki/John_Paul_Stevens'>John Paul Stevens</a> (dissenting)", "Justice <a href='https://en.wikipedia.org/wiki/William_J._Brennan_Jr.'>William J. Brennan, Jr.</a> (dissenting)", "Justice <a href='https://en.wikipedia.org/wiki/Sandra_Day_O%27Connor'>Sandra Day O'Connor</a> (concurring)"], plaintiff: "The State of New Jersey", defendant: "T.L.O.", plaintiff_att: "Allan J. Nodes (for New Jersey", defendant_att: "Lois de Julio (for T.L.O.)", lesson_id: 1)
+LessonVitalFact.create(decision_date: "January 15, 1985", decision: "6-3 in favor of the State of New Jersey", justices: "Chief Justice <a href='https://en.wikipedia.org/wiki/Warren_E._Burger'>Warren Burger</a> (concurring)
+                  <br />
+              Justice <a href='https://en.wikipedia.org/wiki/Byron_White'>Byron White</a> (majority opinion)
+                  <br />
+              Justice <a href='https://en.wikipedia.org/wiki/Thurgood_Marshall'>Thurgood Marshall</a> (dissenting)
+                  <br />
+              Justice <a href='https://en.wikipedia.org/wiki/Harry_Blackmun'>Harry Blackmun</a> (concurring)
+                  <br />
+              Justice <a href='https://en.wikipedia.org/wiki/Lewis_F._Powell_Jr.'>Lewis F. Powell, Jr.</a> (concurring)
+                  <br />
+              Justice <a href='https://en.wikipedia.org/wiki/William_Rehnquist'>William Rehnquist</a> (concurring)
+                  <br />
+              Justice <a href='https://en.wikipedia.org/wiki/John_Paul_Stevens'>John Paul Stevens</a> (dissenting)
+                  <br />
+              Justice <a href='https://en.wikipedia.org/wiki/William_J._Brennan_Jr.'>William J. Brennan, Jr.</a> (dissenting)
+                  <br />
+              Justice <a href='https://en.wikipedia.org/wiki/Sandra_Day_O%27Connor'>Sandra Day O'Connor</a> (concurring)", plaintiff: "The State of New Jersey", defendant: "T.L.O.", plaintiff_att: "Allan J. Nodes (for New Jersey", defendant_att: "Lois de Julio (for T.L.O.)", lesson_id: 1)
 
 OralArg.create(link_url: "https://apps.oyez.org/player/#/burger8/oral_argument_audio/18116", header_text: "Oral Arguments - March 28, 1984", desc_text: "Audio and transcript courtesy of <a href='http://www.oyez.org'> oyez.org</a>. Opens in a new window.", lesson_id: 1)
 
