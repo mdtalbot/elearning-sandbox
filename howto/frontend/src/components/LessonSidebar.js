@@ -88,16 +88,7 @@ export default function LessonSidebar(props) {
           </List.Content>
         </List.Item>
         <br />
-        <List.Item as='a' href='https://www.law.cornell.edu/supremecourt/text/469/325#writing-USSC_CR_0469_0325_ZO'
-          target='popup'>
-          <Icon name='comment alternate outline' />
-          <List.Content>
-            <List.Header>Text of the Majority Opinion</List.Header>
-            <List.Description>
-              Authored by Justice White and concurred with by Chief Justice Burger alongside Justices Blackmun, O'Connor, Powell, and Rehnquist. Text courtesy of Cornell Law School.
-              </List.Description>
-          </List.Content>
-        </List.Item>
+
         <br />
         <List.Item as='a' href='https://www.law.cornell.edu/supremecourt/text/469/325#writing-USSC_CR_0469_0325_ZX'
           target='popup'>

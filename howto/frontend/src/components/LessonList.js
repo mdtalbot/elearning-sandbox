@@ -11,7 +11,7 @@ export default function LessonList(props) {
   // } else {
     return (
       <List selection verticalAlign='middle' size='big'>
-        {props.lessons.map((lesson, index) => <LessonListItem key={index} name={lesson.name} headerImg={lesson.header_img_url} tagline={lesson.front_tagline} id={lesson.id} handleLessonClick={props.handleLessonClick} />
+        {props.lessons.map((lesson, index) => <LessonListItem key={index} name={lesson.name} headerImg={lesson.header_img_url} tagline={lesson.page_tagline} id={lesson.id} handleLessonClick={props.handleLessonClick} />
         )}
       </List>
     )
