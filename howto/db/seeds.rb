@@ -59,7 +59,7 @@ LessonText.create(adv: "In 1980, a teacher at Piscataway High School in New Jers
             <br />
             <br />
 
-             In 1983, the Supreme Court of the United States granted the State of New Jersey's petition for certiorari. In 1985, the Court handed down its decision.)", int: "", sim: "", lesson_id: 1)
+             In 1983, the Supreme Court of the United States granted the State of New Jersey's petition for certiorari. In 1985, the Court handed down its decision.", int: "", sim: "", lesson_id: 1)
 Exercise.create(question: "The Supreme Court of the United States has made decisions that give students fewer rights than adults would have in other settings. How do you think the court justifies doing so?", lesson_id: 1)
 
 Lesson.create(name: "Tinker v. Des Moines", front_tagline: "A case where a student protest kicked off a heated debate about students' First Amendment rights", page_tagline: "What rights to free speech do students have on school grounds?", header_img_url: "https://sites.google.com/a/nv.ccsd.net/tinker-v-des-moines/_/rsrc/1367515638288/home/peace.png?height=320&width=320")

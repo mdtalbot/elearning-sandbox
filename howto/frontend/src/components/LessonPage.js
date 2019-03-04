@@ -6,7 +6,21 @@ import LessonText from './LessonText'
 export default class LessonPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      answerOne = '',
+      answerTwo = '',
+      answerThree = '',
+      answerFour = ''
+    };
+  }
+
+  handleInputChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value,
+    })
+  }
+  handleSubmit = (event) => {
+    event.preventDefault();
   }
 
   render() {
