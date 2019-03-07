@@ -3,7 +3,8 @@ class CreateUsers < ActiveRecord::Migration[5.2]
     create_table :users do |t|
       t.string :login_name
       t.string :password_digest
-      t.string :name
+      t.string :first_name
+      t.string :last_name
       t.string :email
       t.string :section_name
       t.boolean :is_teacher, default: false

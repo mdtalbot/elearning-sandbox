@@ -77,7 +77,8 @@ ActiveRecord::Schema.define(version: 2019_02_15_221552) do
   create_table "users", force: :cascade do |t|
     t.string "login_name"
     t.string "password_digest"
-    t.string "name"
+    t.string "first_name"
+    t.string "last_name"
     t.string "email"
     t.string "section_name"
     t.boolean "is_teacher", default: false
