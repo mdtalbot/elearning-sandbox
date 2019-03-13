@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Menu, Button } from 'semantic-ui-react'
+import { NavLink, withRouter } from 'react-router-dom'
 
-export default class NavBar extends Component {
+class NavBar extends Component {
   state = {}
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
@@ -12,33 +13,35 @@ export default class NavBar extends Component {
     return (
       <Menu>
         <Menu.Item
-          name='editorials'
-          active={activeItem === 'editorials'}
+          as={NavLink} exact
+          to='/'
+          name='Home'
+          active={activeItem === 'home'}
           onClick={this.handleItemClick}
         >
           Home
         </Menu.Item>
 
-        <Menu.Item name='reviews' active={activeItem === 'reviews'} onClick={this.handleItemClick}>
+        <Menu.Item name='userGrades' active={activeItem === 'userGrades'} onClick={this.handleItemClick}>
           My Grades
         </Menu.Item>
 
         <Menu.Item
-          name='upcomingEvents'
-          active={activeItem === 'upcomingEvents'}
+          name='userProfile'
+          active={activeItem === 'userProfile'}
           onClick={this.handleItemClick}
         >
           My Profile
         </Menu.Item>
-        <Menu.Item position='right'>
-          <Button as='a' >
+        <Menu.Item position='right' as={NavLink} to="/login">
             Log in
-                  </Button>
-          <Button as='a' style={{ marginLeft: '0.5em' }}>
+        </Menu.Item>
+          <Menu.Item as={NavLink} to="/signup" >
             Sign Up
-                  </Button>
         </Menu.Item>
         </Menu>
     )
   }
 }
+
+export default withRouter(NavBar)
