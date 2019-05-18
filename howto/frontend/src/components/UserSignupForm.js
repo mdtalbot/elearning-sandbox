@@ -2,10 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { signup } from '../actions/authActions';
-import { Button, Checkbox, Form, FormField, FormInput } from 'semantic-ui-react'
+import { Button, Checkbox, Form } from 'semantic-ui-react'
 
 
-export default class UserSignupForm extends React.Component {
+class UserSignupForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -84,3 +84,4 @@ export default class UserSignupForm extends React.Component {
     );
   }
 }
+export default UserSignupForm = withRouter(connect(null, { signup })(UserSignupForm));
