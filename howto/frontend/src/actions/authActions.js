@@ -73,7 +73,7 @@ export const authenticate = (credentials) => {
 }
 
 const getUser = (credentials) => {
-  const request = new Request('http://localhost:3001/find_user', {
+  const request = new Request('http://localhost:3000/find_user', {
     method: "POST",
     headers: new Headers({
       'Content-Type': 'application/json',
