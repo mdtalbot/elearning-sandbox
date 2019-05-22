@@ -16,3 +16,26 @@ export function getResponse(id) {
     dispatch({ type: 'GET_RESPONSE', payload: response })
   }
 }
+
+export function createResponse(responseInfo) {
+  return dispatch => {
+    return fetch(`${API_URL}/responses`, {
+      method: 'POST',
+      body: JSON.stringify({ response: responseInfo }),
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      }
+    })
+      .then(resp => resp.json())
+      .then(jresp => {
+        dispatch({
+          type: 'CREATE_RESPONSE',
+          payload: jresp
+        })
+      })
+      .catch((errors) => {
+        console.log(errors)
+      })
+  }
+}
