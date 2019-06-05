@@ -7,7 +7,7 @@ export function fetchResponses() {
     dispatch({ type: 'LOADING_RESPONSES' })
     return fetch(`${API_URL}/responses.json`)
       .then(response => response.json())
-      .then(puzzles => dispatch({ type: 'FETCH_RESPONSES', payload: RESPONSES }));
+      .then(response => dispatch({ type: 'FETCH_RESPONSES', payload: RESPONSES }));
   }
 }
 
