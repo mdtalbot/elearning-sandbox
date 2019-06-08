@@ -113,21 +113,21 @@ Lesson.create(name: "Engel v. Vitale", front_tagline: "A case in which a school 
 
 LessonVitalFact.create(decision_date: "June 25, 1962", decision: "6-1 in favor of Engel, et al.", justices: "Chief Justice <a href='https://en.wikipedia.org/wiki/Earl_Warren'>Earl Warren</a> (majority opinion)
                   <br />
-              Justice <a href='https://en.wikipedia.org/wiki/Byron_White'>Byron White</a> (concurring)
+              Justice <a href='https://en.wikipedia.org/wiki/Byron_White'>Byron White</a> (recused)
                   <br />
-              Justice <a href='https://en.wikipedia.org/wiki/Felix_Frankfurter'>Felix Frankfurter</a> (majority opinion)
+              Justice <a href='https://en.wikipedia.org/wiki/Felix_Frankfurter'>Felix Frankfurter</a> (recused)
                   <br />
               Justice <a href='https://en.wikipedia.org/wiki/Tom_C._Clark'>Tom C. Clark</a> (majority opinion)
                   <br />
-              Justice <a href='https://en.wikipedia.org/wiki/Potter_Stewart'>Potter Stewart</a> (concurring)
+              Justice <a href='https://en.wikipedia.org/wiki/Potter_Stewart'>Potter Stewart</a> (dissenting)
                   <br />
-              Justice <a href='https://en.wikipedia.org/wiki/Hugo_Black'>Hugo Black</a> (dissenting)
+              Justice <a href='https://en.wikipedia.org/wiki/Hugo_Black'>Hugo Black</a> (majority opinion)
                   <br />
-              Justice <a href='https://en.wikipedia.org/wiki/William_O._Douglas'>William O. Douglas</a> (majority opinion)
+              Justice <a href='https://en.wikipedia.org/wiki/William_O._Douglas'>William O. Douglas</a> (concurring)
                   <br />
               Justice <a href='https://en.wikipedia.org/wiki/William_J._Brennan_Jr.'>William J. Brennan, Jr.</a> (majority opinion)
                   <br />
-              Justice <a href='https://en.wikipedia.org/wiki/John_Marshall_Harlan_(1899%E2%80%931971)'>John M. Harlan II</a> (dissenting)", plaintiff: "John F. Tinker, Mary Beth Tinker, Christopher Eckhardt", defendant: "Des Moines Independent Community School District", plaintiff_att: "Dan Johnston (for Tinker, et al.)", defendant_att: "Alan Herrick (for Des Moines CISD)", lesson_id: 2)
+              Justice <a href='https://en.wikipedia.org/wiki/John_Marshall_Harlan_(1899%E2%80%931971)'>John M. Harlan II</a> (majority opinion)", plaintiff: "Steven I. Engel, et al.", defendant: "William J. Vitale, Jr., et al", plaintiff_att: "Dan Johnston (for Tinker, et al.)", defendant_att: "Alan Herrick (for Des Moines CISD)", lesson_id: 2)
 
 
 Lesson.create(name: "West Virginia Board of Education v. Barnette", front_tagline: "A case which examined whether or not forcing students to recite the Pledge of Allegiance violates their First Amendment rights", page_tagline: "Can schools force students to salute the American flag or recite the Pledge of Allegiance?", header_img_url: "https://constitutionallawreporter.com/wp-content/uploads/2015/09/West-Virginia-State-Board-of-Education-v.-Barnette.gif")
