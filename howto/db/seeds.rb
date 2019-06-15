@@ -139,8 +139,11 @@ Opinion.create(link_url: "https://www.law.cornell.edu/supremecourt/text/370/421#
 
 Opinion.create(link_url: "https://www.law.cornell.edu/supremecourt/text/370/421#writing-USSC_CR_0370_0421_ZD", header_text: "Text of the Majority Opinion", desc_text: "Authored by Justice Stewart in dissent with the majority opinion. Text courtesy of Cornell Law School.", lesson_id: 3)
 
+Exercise.create(question: "Placeholder question", lesson_id: 2)
 
 Lesson.create(name: "West Virginia Board of Education v. Barnette", front_tagline: "A case which examined whether or not forcing students to recite the Pledge of Allegiance violates their First Amendment rights", page_tagline: "Can schools force students to salute the American flag or recite the Pledge of Allegiance?", header_img_url: "https://constitutionallawreporter.com/wp-content/uploads/2015/09/West-Virginia-State-Board-of-Education-v.-Barnette.gif")
+
+
 
 user = User.new
 user.login_name = "bungking"
